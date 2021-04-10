@@ -5,7 +5,8 @@
 \alias{rfClassifier}
 \title{Random forest classifier for refining basal-like MIBC}
 \format{
-
+An object of class varSelRF
+\describe{contains rfClassifier an object of class varSelRF and can be used for external prediction.}
 }
 \usage{
 rfClassifier

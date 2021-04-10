@@ -5,7 +5,8 @@
 \alias{templates}
 \title{Template for classifying MIBC using NTP}
 \format{
-
+A data frame with 120 rows (30 markers for each subtype) and 3 variables.
+\describe{contains templates the subtype-specific up-regulated markers for MIBC.}
 }
 \usage{
 templates

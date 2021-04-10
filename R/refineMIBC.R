@@ -13,12 +13,13 @@
 #' @param res.path A string value to indicate the path for saving the prediction result.
 #' @param res.name A string value to indicate the name of the output prediction table.
 #'
-#' @return A figure of predictive heatmap by NTP (.pdf) and a data.frame storing the results of nearest template prediction (see \link[CMScaller]{ntp}).
+#' @return A figure of predictive heatmap by NTP (.pdf) and a data.frame storing the results of nearest template prediction.
 #' @export
 #' @importFrom CMScaller ntp subHeatmap
 #' @importFrom grDevices pdf dev.off
 #' @references Hoshida, Y. (2010). Nearest Template Prediction: A Single-Sample-Based Flexible Class Prediction with Confidence Assessment. PLoS ONE 5, e15543.
 #'
+#'             Eide, P.W., Bruun, J., Lothe, R.A. et al. CMScaller: an R package for consensus molecular subtyping of colorectal cancer pre-clinical models. Sci Rep 7, 16618 (2017).
 #' @examples
 refineMIBC <- function(expr       = NULL,
                        scaleFlag  = TRUE,

@@ -39,11 +39,13 @@ refineMIBC(
 \item{res.name}{A string value to indicate the name of the output prediction table.}
 }
 \value{
-A figure of predictive heatmap by NTP (.pdf) and a data.frame storing the results of nearest template prediction (see \link[CMScaller]{ntp}).
+A figure of predictive heatmap by NTP (.pdf) and a data.frame storing the results of nearest template prediction.
 }
 \description{
 Refine muscle-invasive bladder cancer into four subtypes based on transcriptome profile by nearest template prediction algorithm.
 }
 \references{
 Hoshida, Y. (2010). Nearest Template Prediction: A Single-Sample-Based Flexible Class Prediction with Confidence Assessment. PLoS ONE 5, e15543.
+
+            Eide, P.W., Bruun, J., Lothe, R.A. et al. CMScaller: an R package for consensus molecular subtyping of colorectal cancer pre-clinical models. Sci Rep 7, 16618 (2017).
 }
