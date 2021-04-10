@@ -18,7 +18,7 @@ refineBasal <- function(expr       = NULL,
                         res.name   = "REFINED_MIBC_BASAL") {
 
   # load internal random forest classifier for refining basal-like MIBC
-  data("rfClassifier.RData")
+  #data("rfClassifier.RData")
 
   # initial check
   if(!all(is.element(rfClassifier$selected.vars, rownames(expr)))) {

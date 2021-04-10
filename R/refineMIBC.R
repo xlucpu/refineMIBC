@@ -33,7 +33,7 @@ refineMIBC <- function(expr       = NULL,
                        res.name   = "PREDICTED_MIBC_SUBTYPE") {
 
   # load internal templates for classifying MIBC
-  data("templates.RData")
+  #data("templates.RData")
 
   # initial checking
   if(!is.element(distance, c("cosine", "pearson", "spearman", "kendall"))) {
