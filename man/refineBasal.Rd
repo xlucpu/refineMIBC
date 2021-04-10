@@ -21,7 +21,7 @@ refineBasal(
 \item{res.name}{A string value to indicate the name of the output prediction table.}
 }
 \value{
-A data.frame storing the random forest prediction results, including \code{samID} for sample name, \code{prob} for probability as basal-inflamed, and \code{basal} for final classifications using 0.5 as cutoff.
+A data.frame storing the random forest prediction results, including `samID` for sample name, `prob` for probability as basal-inflamed, and `basal` for final classifications using 0.5 as cutoff.
 }
 \description{
 Refine pre-identified basal-like muscle invasive bladder cancer into either basal-inflamed or basal-noninflamed subtype based on a random forest classifier.
