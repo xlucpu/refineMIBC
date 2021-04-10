@@ -30,3 +30,5 @@ BugReports: https://github.com/xlucpu/refineMIBC/issues
 Collate: 
     'refineMIBC.R'
     'refineBasal.R'
+    'dataset.R'
+    'global.R'
