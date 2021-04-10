@@ -12,6 +12,14 @@
 #'
 #' @import varSelRF
 #' @examples
+#' library(refineMIBC)
+#' load(system.file("extdata", "demo.RData", package = "refineMIBC", mustWork = TRUE)) # load example data
+#' expr <- demo$MIBC.expr
+#' subt <- demo$MIBC.subt
+#' isbasal <- subt$TCGA == "Basal_squamous"
+#' iBasal  <- refineBasal(expr    = expr,
+#'                        isBasal = isbasal)
+#' head(iBasal)
 refineBasal <- function(expr       = NULL,
                         isBasal    = NULL,
                         res.path   = getwd(),

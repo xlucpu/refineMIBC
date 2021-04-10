@@ -21,6 +21,15 @@
 #'
 #'             Eide, P.W., Bruun, J., Lothe, R.A. et al. CMScaller: an R package for consensus molecular subtyping of colorectal cancer pre-clinical models. Sci Rep 7, 16618 (2017).
 #' @examples
+#' library(refineMIBC)
+#' load(system.file("extdata", "demo.RData", package = "refineMIBC", mustWork = TRUE)) # load example data
+#' expr <- demo$MIBC.expr
+#' subt <- demo$MIBC.subt
+#' iCS  <- refineMIBC(expr       = expr,
+#'                    scaleFlag  = TRUE,
+#'                    centerFlag = TRUE,
+#'                    doPlot     = FALSE)
+#' head(iCS)
 refineMIBC <- function(expr       = NULL,
                        scaleFlag  = TRUE,
                        centerFlag = TRUE,

@@ -44,6 +44,17 @@ A figure of predictive heatmap by NTP (.pdf) and a data.frame storing the result
 \description{
 Refine muscle-invasive bladder cancer into four subtypes based on transcriptome profile by nearest template prediction algorithm.
 }
+\examples{
+library(refineMIBC)
+load(system.file("extdata", "demo.RData", package = "refineMIBC", mustWork = TRUE)) # load example data
+expr <- demo$MIBC.expr
+subt <- demo$MIBC.subt
+iCS  <- refineMIBC(expr       = expr,
+                   scaleFlag  = TRUE,
+                   centerFlag = TRUE,
+                   doPlot     = FALSE)
+head(iCS)
+}
 \references{
 Hoshida, Y. (2010). Nearest Template Prediction: A Single-Sample-Based Flexible Class Prediction with Confidence Assessment. PLoS ONE 5, e15543.
 

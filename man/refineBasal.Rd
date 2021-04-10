@@ -26,3 +26,13 @@ A data.frame storing the random forest prediction results, including `samID` for
 \description{
 Refine pre-identified basal-like muscle invasive bladder cancer into either basal-inflamed or basal-noninflamed subtype based on a random forest classifier.
 }
+\examples{
+library(refineMIBC)
+load(system.file("extdata", "demo.RData", package = "refineMIBC", mustWork = TRUE)) # load example data
+expr <- demo$MIBC.expr
+subt <- demo$MIBC.subt
+isbasal <- subt$TCGA == "Basal_squamous"
+iBasal  <- refineBasal(expr    = expr,
+                       isBasal = isbasal)
+head(iBasal)
+}
