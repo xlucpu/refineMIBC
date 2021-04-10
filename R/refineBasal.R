@@ -36,7 +36,7 @@ refineBasal <- function(expr       = NULL,
   # prediction using random forest classifier
   if(is.null(isBasal)) { # all samples were assumed to be basal-like
     pred <- predict(rfClassifier$rf.model,
-                    newdata = subset(t(gset), select = rfClassifier$selected.vars),
+                    newdata = subset(scale(t(gset)), select = rfClassifier$selected.vars),
                     type = "prob")
 
     rf.res <- data.frame(samID = colnames(gset),
@@ -46,7 +46,7 @@ refineBasal <- function(expr       = NULL,
 
   } else {
     pred <- predict(rfClassifier$rf.model,
-                    newdata = subset(t(gset[,isBasal]), select = rfClassifier$selected.vars), # use basal-like samples only
+                    newdata = subset(scale(t(gset[,isBasal])), select = rfClassifier$selected.vars), # use basal-like samples only
                     type = "prob")
 
     rf.res <- data.frame(samID = colnames(gset[,isBasal]),
