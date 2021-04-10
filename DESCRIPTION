@@ -1,23 +1,32 @@
 Package: refineMIBC
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Refine muscle-invasive bladder cancer
+Version: 0.99.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Xiaofan",
+           family = "Lu",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: GPL-3
+           email = "xlu.cpu@foxmail.com",
+           comment = c(ORCID = "0000-0003-2417-6548"))
+Description: This package is to 1) classify muscle-invasive bladder cancer (MIBC) to one of the four subtypes identified from multi-omics integrative clustering; 2) refine basal-like MIBC into either basal-inflamed or basal-noninflamed subtype.
+Depends: R (>= 4.0.1)
+License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
 Suggests: 
     testthat,
     knitr,
-    rmarkdown
-VignetteBuilder: knitr
+    rmarkdown,
+    kableExtra
+Remotes: 
+    github::Lothelab/CMScaller@master
 Imports: 
     CMScaller,
     varSelRF
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+biocViews: Classification, CancerData
+URL: https://github.com/xlucpu/refineMIBC
+BugReports: https://github.com/xlucpu/refineMIBC/issues
+Collate: 
+    'refineMIBC.R'
+    'refineBasal.R'
