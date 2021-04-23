@@ -3,7 +3,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-This package implements a 120-gene template, that assigns subtype labels according to the multi-omics integrative classification of muscle-invasive bladder cancer (MIBC) using nearest template prediction. The integrative consensus subtype identifies 4 molecular classes : Basal-inflamed, Basal-noninflamed, Luminal-excluded, and Luminal-desert. This package also deploys a 5-immune-gene classifier to refine each basal-like MIBC as either Basal-inflamed or Basal-noninflamed by random forest if basal-like classification has been already identified by other approaches (e.g., consensusMIBC, PAM, oneNN, Lund, etc.)
+This package implements a 120-gene template, that assigns subtype labels according to the multi-omics consensus ensemble of muscle-invasive bladder cancer (MIBC) using nearest template prediction. The consensus ensemble identifies 4 integrative consensus subtypes: basal-inflamed, basal-noninflamed, luminal-excluded, and luminal-desert. This package also deploys a 5-immune-gene classifier to refine each basal-like MIBC as either basal-inflamed or basal-noninflamed by random forest classifier if basal-like classification has been already identified by other approaches (e.g., CMS, PAM, oneNN, Lund, etc.).
 
 ## Citation
 
